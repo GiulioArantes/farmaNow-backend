@@ -45,4 +45,8 @@ public class CategoryService {
         repository.delete(repository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Categoria não encontrada")));
     }
+
+    public Boolean existsById(Long id) {
+        return repository.existsById(id);
+    }
 }
