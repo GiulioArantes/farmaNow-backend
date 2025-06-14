@@ -1,4 +1,4 @@
-package com.generation.projeto_final_bloco_02.controllers;
+package com.generation.farmanow.controllers;
 
 import java.util.List;
 import java.util.Optional;
@@ -18,10 +18,10 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.generation.projeto_final_bloco_02.models.Category;
-import com.generation.projeto_final_bloco_02.models.Product;
-import com.generation.projeto_final_bloco_02.services.CategoryService;
-import com.generation.projeto_final_bloco_02.services.ProductService;
+import com.generation.farmanow.models.Category;
+import com.generation.farmanow.models.Product;
+import com.generation.farmanow.services.CategoryService;
+import com.generation.farmanow.services.ProductService;
 
 import jakarta.validation.Valid;
 

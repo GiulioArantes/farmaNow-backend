@@ -1,4 +1,4 @@
-package com.generation.projeto_final_bloco_02.services;
+package com.generation.farmanow.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.generation.projeto_final_bloco_02.models.Product;
-import com.generation.projeto_final_bloco_02.repositories.ProductRepository;
+import com.generation.farmanow.models.Product;
+import com.generation.farmanow.repositories.ProductRepository;
 
 import jakarta.persistence.EntityNotFoundException;
 
