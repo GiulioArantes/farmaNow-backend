@@ -53,10 +53,10 @@ src/main/resources/application.properties
 # 5. Execute a aplicação Spring Boot
 ```
 
-## 🌐 Front-end
+### 🌐 Front-end
 
-> **🔗 Importante:** Para utilizar este back-end, é necessário rodar o front-end da aplicação.
-> Acesse o repositório do front-end clicando [aqui](https://github.com/GiulioArantes/farmanow) e siga as instruções disponíveis por lá.
+> **🔗 Importante:** Para utilizar este back-end, é necessário rodar o front-end da aplicação ou em uma ferramenta de teste.
+> Acesse o repositório do front-end clicando [aqui](https://github.com/GiulioArantes/farmanow) e siga as instruções disponíveis por lá ou teste através do [Postman](https://www.postman.com/).
 
 ### 🔗 Endpoints
 
@@ -79,6 +79,31 @@ src/main/resources/application.properties
 **DELETE**
 * `/products/{id}` — Deleta um produto
 * `/categories/{id}` — Deleta uma categoria
+
+### 🗂️ Atributos das entidades
+
+🔹**Product**
+
+| Atributo        | Tipo       | Descrição                                      |
+| --------------- | ---------- | ---------------------------------------------- |
+| `id`            | Long       | Identificador único (gerado automaticamente)   |
+| `name`          | String     | Nome do produto                                |
+| `price`         | BigDecimal | Preço do produto                               |
+| `description`   | String     | Descrição detalhada                            |
+| `stockQuantity` | Integer    | Quantidade em estoque                          |
+| `category`      | Category   | Relação muitos-para-um com a entidade Category |
+
+🔸 **Category**
+
+| Atributo     | Tipo           | Descrição                                     |
+| ------------ | -------------- | --------------------------------------------- |
+| `id`         | Long           | Identificador único (gerado automaticamente)  |
+| `department` | String         | Nome do departamento da categoria             |
+| `product`    | List\<Product> | Relação um-para-muitos com a entidade Product |
+
+✅ **Observação:**
+* A entidade **Product** está associada a uma única **Category**.
+* A entidade **Category** pode ter vários **Product** vinculados a ela.
 
 ## 🤝 Contribuição
 
